@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #555555;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #cbc6c6;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f1c40f;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 30px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .hide {
+      display: none;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #ecf0f1;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 8px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <script>
+    const masuk = confirm("Mari kita lihat apa yang ada disana?");
+    if (masuk) {
+      alert("Welcome Friends 👋");
+    } else {
+      alert("See You Again👋");
+    }
+
+    const nama = prompt("Masukkan Nama Anda:");
+    if (nama) {
+      alert("Halo " + nama + ", selamat datang di Website Sekolah!");
+    } else {
+      alert("Selamat datang di Website Sekolah!");
+    }
+  </script>
+
+  <header>
+    <h1>Website Sekolah</h1>
+    <p>Selamat datang di website sekolah saya</p>
+    <img src="smk.png" alt="Foto" class="foto-kanan"width="500" height="auto" />
+  </header>
+
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#visi-misi">Visi Misi</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <main>
+    <section class="container content" id="home">
+        <h2>Home</h2>
+<p>Selamat datang di Website Resmi SMK Negeri 1 BLEGA! 🌟</p>
+<p>Website ini dibuat sebagai media informasi dan komunikasi antara sekolah dengan siswa, guru, orang tua, serta masyarakat luas. Kami berkomitmen untuk terus meningkatkan kualitas layanan pendidikan dan keterbukaan informasi melalui platform digital ini.</p>
+
+<p>Melalui website ini, saya ingin menunjukkan bahwa SMKN 1 BLEGA bukan hanya tempat untuk belajar teori, tetapi juga tempat untuk berkembang secara kreatif, mandiri, dan siap menghadapi tantangan di era digital.</p>
+
+<p>Di sini, kamu dapat menemukan berbagai informasi penting tentang sekolah kami, seperti visi & misi, jurusan yang tersedia, dokumentasi kegiatan, hingga kontak yang bisa dihubungi.</p>
+
+<p>Pendidikan adalah kunci masa depan, dan teknologi adalah jembatannya. Website ini merupakan langkah kecil kami menuju pendidikan yang lebih modern, inklusif, dan inspiratif.</p>
+
+<p>Setiap halaman di dalam website ini mencerminkan semangat kami untuk terus belajar, berinovasi, dan membuka diri terhadap perubahan zaman. Karena kami percaya, sekolah bukan hanya tempat menerima ilmu, tapi tempat membangun mimpi dan menciptakan masa depan.</p>
+
+<p>Selamat menjelajahi website ini. Semoga informasi yang kami sajikan bermanfaat dan bisa menjadi inspirasi bagi teman-teman semua. 📘✨</p>
+
+    </section>
+
+    <section class="container content hide" id="visi-misi">
+      <h2>Visi & Misi</h2>
+      <ul>
+        <strong>Visi:</strong>
+        <li>Imtaq, Profesional dan Kompeten</li>
+        <strong>Misi:</strong>
+        <li>Memiliki sumber daya manusia yang berilmu, berakhlaq, beriman, dan bertaqwa</li>
+        <li>Mencetak tenaga kerja yang profesional di bidang teknologi, bisnis dan manajemen, serta mampu di dunia usaha dan industri</li>
+        <li>Mencetak tamatan yang kompeten dan mampu berwirausaha</li>
+      </ul>
+      <p>Saya memilih jurusan ini karena saya ingin mendalami dunia pemrograman dan teknologi, terutama dalam pengembangan website.</p>
+    </section>
+
+    <section class="container content hide" id="galeri">
+      <h2>Galeri</h2>
+       <img src="akl.png" alt="Foto Husnul Khotimah"width="100" height="auto" />
+       <p>Mengelola dan mencatat keuangan secara manual maupun komputerisasi,
+        serta keterampilan akuntansi dan pajak</p>
+       <img src="rpl.png" alt="Foto Husnul Khotimah" width="100" height="auto" />
+       <p>Mempelajari cara pengembangan perangkat lunak, pembuatan, pemeliharaan, manajemen organisasi dan kualitas</p>
+       <img src="tkj.png" alt="Foto Husnul Khotimah" width="100" height="auto" />
+       <p>Mempelajari jaringan, komputer, perangkat keras dan lunak, serta pengoperasian internet dan TIK</p>
+       <img src="to.png" alt="Foto Husnul Khotimah" width="100" height="auto" />
+       <p>Bidang teknik otomotif untuk keterampilan pelayanan dan perawatan sepeda motor</p>
+
+      <p style="margin-top: 20px;">Ini adalah jurusan SMKN 1 BLEGA.</p>
+    </section>
+
+    <section class="container content hide" id="kontak">
+      <h2>Kontak</h2>
+      <p>Jika ingin bertanya atau berdiskusi, kamu bisa menghubungi saya melalui:</p>
+      <ul>
+        <li><strong>Telpon:</strong> +62 859-3241-7098</li>
+        <li><strong>Instagram:</strong> @dermoclas_ (jangan lupa follow ya!)</li>
+        <p style="margin-top: 20px;">Saya <strong>Husnul Khotimah</strong>, siswi kelas XI dari jurusan Rekayasa Perangkat Lunak (RPL). Website ini adalah hasil dari proses pembelajaran saya dalam bidang pengembangan web, sekaligus sebagai sarana untuk memperkenalkan sekolah saya tercinta kepada dunia luar.</p>
+      
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Husnul Khotimah — Semangat belajar coding, desain, dan web development 💻</p>
+  </footer>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll(".content");
+      sections.forEach(section => {
+        section.classList.add("hide");
+      });
+      document.getElementById(id).classList.remove("hide");
+    }
+
+    // Event listener menu
+    document.querySelectorAll("nav a").forEach(link => {
+      link.addEventListener("click", function(e) {
+        e.preventDefault();
+        const id = this.getAttribute("href").substring(1);
+        showSection(id);
+      });
+    });
+
+    // Tampilkan Home saat pertama
+    showSection("home");
+  </script>
+
+</body>
+</html>
